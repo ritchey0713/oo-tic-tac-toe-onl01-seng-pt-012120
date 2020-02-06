@@ -28,11 +28,12 @@ class TicTacToe
   end
 
   def position_taken?(index)
+    binding.pry
     @board[index] != " "
   end
 
   def valid_move?(index)
-    binding.pry
+    # binding.pry
     !position_taken?(index) && index.between?(0,100)
   end
 
