@@ -32,9 +32,6 @@ class TicTacToe
   end
 
   def valid_move?(index)
-    binding.pry
-    input = get.chomp 
-    random_thing = "hello"
     !position_taken?(index) && index.between?(0,8)
   end
 
